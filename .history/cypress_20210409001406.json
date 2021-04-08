@@ -1,8 +1,4 @@
-{
-  "screenshotOnRunFailure": true,
-  "screenshotsFolder": "cypress/reports/mochareports/assets",
-  "videosFolder": "cypress/reports/mochareports/assets",
-  "reporter": "cypress-multi-reporters",
+"reporter": "cypress-multi-reporters",
     "reporterOptions": {
         "reporterEnabled": "mochawesome",
         "mochawesomeReporterOptions": {
@@ -13,4 +9,3 @@
             "json": true
         }
     }
-}
