@@ -1,0 +1,25 @@
+{
+  "name": "cypress-test-example-niluka",
+  "version": "1.0.0",
+  "description": "Example code for series of blog posts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NilukaSripalim/cypress-test-example-niluka.git"
+  },
+  "keywords": [
+    "cypress"
+  ],
+  "author": "niluka-sripali",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NilukaSripalim/cypress-test-example-niluka/issues"
+  },
+  "homepage": "https://github.com/NilukaSripalim/cypress-test-example-niluka#readme",
+  "devDependencies": {
+    "cypress": "^7.0.1"
+  }
+}
