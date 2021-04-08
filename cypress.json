@@ -4,7 +4,12 @@
   "videosFolder": "cypress/reports/mochareports/assets",
   "reporter": "cypress-multi-reporters",
     "reporterOptions": {
-        "reporterEnabled": "mochawesome",
+        "reporterEnabled": "mochawesome , cypress-dashboard",
+        "cypressDashboardReporterOptions": {
+          "reportDir": "cypress/reports/cypress-dashboard",
+          "isLocalDeployment": true,
+          "dashboardTitle": "Niluka- Cypress- Test"
+        },
         "mochawesomeReporterOptions": {
             "reportDir": "cypress/reports/mocha",
             "quite": true,
