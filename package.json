@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/NilukaSripalim/cypress-test-example-niluka#readme",
   "devDependencies": {
-    "cypress": "^7.0.1"
+    "cypress": "^7.0.1",
+    "playwright": "^1.10.0"
   }
 }
