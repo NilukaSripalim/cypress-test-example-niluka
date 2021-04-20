@@ -1,3 +1,12 @@
+/*
+ *   Copyright (c) 2021 WSO2 Inc. (http://www.wso2.org)
+ *   All rights reserved.
+ *   
+ *   This software is the property of WSO2 Inc. and its suppliers, if any.
+ *   Dissemination of any information or reproduction of any material contained
+ *   herein in any form is strictly forbidden, unless permitted by WSO2 expressly.
+ *   You may not alter or remove any copyright or other notice from copies of this content.
+ */
 /// <reference types="cypress" />
 // ***********************************************************
 // This example plugins/index.js can be used to load plugins
@@ -16,7 +25,9 @@
  * @type {Cypress.PluginConfig}
  */
 // eslint-disable-next-line no-unused-vars
+const allureWriter = require("@shelex/cypress-allure-plugin/writer");
+
 module.exports = (on, config) => {
-  // `on` is used to hook into various events Cypress emits
-  // `config` is the resolved Cypress config
-}
+  allureWriter(on, config);
+  return config;
+};

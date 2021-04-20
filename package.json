@@ -3,7 +3,14 @@
   "version": "1.0.0",
   "description": "Example code for series of blog posts",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "cy:run": "cypress run --env allure=true",
+    "allure:report": "allure generate allure-results --clean -o allure-report",
+    "allure:clear": "rm -R -f allure-results && rm -R -f allure-report && rm -R -f cypress/screenshots && rm -R -f cypress/videos",
+    "pretest": "npm run allure:clear",
+    "test": "npm run cy:run || npm run posttest",
+    "posttest": "npm run allure:report"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/NilukaSripalim/cypress-test-example-niluka.git"
@@ -18,6 +25,10 @@
   },
   "homepage": "https://github.com/NilukaSripalim/cypress-test-example-niluka#readme",
   "devDependencies": {
-    "cypress": "^7.0.1"
+    "cypress": "^7.1.0"
+  },
+  "dependencies": {
+    "@shelex/cypress-allure-plugin": "^2.5.0",
+    "allure-commandline": "^2.13.8"
   }
 }
